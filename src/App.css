@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+@keyframes animate {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: gray;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 1000px 0; }
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: 1px solid #E7E7E7;
+}
+
+.bar {
+  margin: 1rem;
+  width: 100%;
+  height: 2px;
+}
+
+.loadingBar {
+  background-image: linear-gradient(90deg, red 0%, blue 20%, green 40%, yellow 60%, blue 80%, red 100%);
+	background-position: 0px 0px;
+	background-repeat: repeat;
+	animation: animatedBackground 2s linear infinite;
+}
+
+/* .number {
+  background-image: linear-gradient(90deg, red 0%, blue 20%, green 40%, yellow 60%, purple 80%, teal 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.number {
+  color: #808080;
+}
+
+.loading {
+  background-image: linear-gradient(90deg, #DDD 0%, #E6E6E6 50%, #EEE 70%, #DDD 100%);
+	background-position: 0px 0px;
+	background-repeat: repeat;
+	animation: animatedBackground 10s linear infinite;
+}
+
+.container {
+  width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Tabs {
+  display: flex;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.TabItem {
+  list-style: none;
+  flex: 1 0 0;
+  padding: 1rem;
+  border: 1px solid #E7E7E7;
+  border-right: 0;
+}
+
+.TabItem:first-child {
+  border-radius: 6px 0 0 0;
+}
+
+.TabItem:last-child {
+  border-right: 1px solid #E7E7E7;
+  border-radius: 0 6px 0 0;
+}
+
+.TabItem:hover {
+  cursor: pointer;
+}
+
+.TabItem-active {
+  background: #E7E7E7;
+}
+
+.TabsContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.TabContent {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid #E7E7E7;
+  border-top: 0;
+  min-height: 500px;
+  border-radius: 0 0 6px 6px;
+}
