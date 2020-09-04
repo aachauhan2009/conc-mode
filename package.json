@@ -42,7 +42,7 @@
     "postcss-normalize": "7.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
-    "react": "0.0.0-experimental-f6b8d31a7",
+    "react": "0.14.0",
     "react-app-polyfill": "^1.0.4",
     "react-dev-utils": "^9.1.0",
     "react-dom": "0.0.0-experimental-f6b8d31a7",
